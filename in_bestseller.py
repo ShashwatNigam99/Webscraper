@@ -62,7 +62,7 @@ for j in range(1, 6):
         else:
             avgrat.append("Not available")
 
-with open('output/in_book.csv', 'w') as output:
+with open('in_book.csv', 'w') as output:
     writer = csv.writer(output, delimiter=';')
     writer.writerow(["Name", "URL", "Author", "Price",
                      "Number of Ratings", "Average Rating"])
